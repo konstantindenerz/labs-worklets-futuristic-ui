@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TBD</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style/demo.css">
+    <link rel="stylesheet" type="text/css" href="style/button.css">
+    <script>
+        if ('paintWorklet' in CSS && 'registerProperty' in CSS && 'CSSUnitValue' in window) {
+
+        } else {
+            console.warn('no support');
+        }
+    </script>
+    <script src="src/bg-lines.registration.js"></script>
+    <script src="src/corner.registration.js"></script>
+    <script src="src/bg-dots.registration.js"></script>
+</head>
+<body>
+    <button class="page-title" labs-primary>Dashboard</button>
+    <button class="page-title" labs-primary>Button</button>
+    <button class="page-title" labs-primary>Foo <br>Bar</button>
+</body>
+</html>

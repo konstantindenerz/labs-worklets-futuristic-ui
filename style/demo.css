@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #f23a48;
+    --bg-color: #1f1f1f;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: paint(kode-labs-bg-dots), var(--bg-color);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin: 0;
+}
+
