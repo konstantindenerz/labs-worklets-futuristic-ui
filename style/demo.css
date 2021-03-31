@@ -1,6 +1,7 @@
 :root {
     --primary-color: #f23a48;
     --bg-color: #1f1f1f;
+    --border-color: rgba(255, 255, 255, .04);
 }
 
 html {
@@ -11,6 +12,7 @@ body {
     background: paint(kode-labs-bg-dots), var(--bg-color);
     color: white;
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
     font-size: 24px;
     display: grid;
     place-items: center;
