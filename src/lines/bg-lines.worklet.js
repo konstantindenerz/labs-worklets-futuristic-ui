@@ -9,9 +9,11 @@ class BackgroundLinesWorklet {
 
     paint(ctx, size, props) {
         const [gap, color, width] = BackgroundLinesWorklet.inputProperties.map(prop => props.get(prop));
-        const strokeWidth = width.value;
-        const count = Math.round(size.height / strokeWidth + gap.value);
-        let y = gap.value;
+        const gapValue = gap.value || 10;
+        const widthValue = width.value || 1;
+        const strokeWidth = widthValue;
+        const count = Math.round(size.height / strokeWidth + gapValue);
+        let y = gapValue;
         for (let i = 0; i < count; i++) {
             ctx.beginPath();
             ctx.moveTo(0, y);
@@ -19,7 +21,7 @@ class BackgroundLinesWorklet {
             ctx.strokeStyle = color;
             ctx.lineWidth = strokeWidth;
             ctx.stroke();
-            y += gap.value + strokeWidth;
+            y += gapValue + strokeWidth;
         }
     }
 }

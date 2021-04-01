@@ -1,0 +1,10 @@
+circles-sample {
+    background: paint(kode-labs-circles);
+    --kode-labs-circles-opacity: .1 .2 .5 .6;
+    padding: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    color: var(--primary-color);
+}

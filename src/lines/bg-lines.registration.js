@@ -20,4 +20,4 @@ CSS.registerProperty({
 });
 
 
-CSS.paintWorklet.addModule('src/bg-lines.worklet.js')
+CSS.paintWorklet.addModule('lines/bg-lines.worklet.js')

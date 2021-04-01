@@ -2,7 +2,7 @@ import './dots-sample.component.css';
 
 import('./bg-dots.registration');
 
-export const dotsSampleComponent = ({
+export const dotsSampleComponentFactory = ({
                                         label,
                                         radius,
                                         distance,
