@@ -4,9 +4,9 @@
   "description": "A collection of paint worklets to create futuristic UI",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run storybook",
+    "start": "yarn storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache -s src",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
   },
   "repository": {
     "type": "git",
