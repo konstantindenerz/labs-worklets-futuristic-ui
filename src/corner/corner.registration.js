@@ -20,4 +20,4 @@ CSS.registerProperty({
 });
 
 
-CSS.paintWorklet.addModule('src/corner.worklet.js')
+CSS.paintWorklet.addModule('corner/corner.worklet.js')

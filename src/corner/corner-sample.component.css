@@ -1,0 +1,29 @@
+corner-sample {
+    user-select: none;
+    padding: .3em;
+    font-size: 42px;
+    font-weight: bold;
+    border: 20px solid transparent;
+    border-image-source: paint(kode-labs-corner);
+    border-image-slice: 20;
+    background-clip: padding-box;
+    transition: all .3s ease,
+    --kode-labs-corner-color .3s ease,
+    --kode-labs-corner-length .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+@media (hover) {
+    corner-sample:hover {
+        --kode-labs-corner-length: 20px !important;
+        transform: scale(1.08);
+    }
+}
+
+corner-sample:active {
+    --kode-labs-corner-length: 60px !important;
+    --kode-labs-corner-color: var(--primary-color) !important;
+    transform: scale(1);
+}

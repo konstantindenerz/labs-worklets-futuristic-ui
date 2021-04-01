@@ -16,3 +16,16 @@
         background: var(--color-bg);
     }
 </style>
+<script>
+    if (!'paintWorklet' in CSS) {
+        const message = 'CSS.paintWorklet API is not available';
+        console.warn(message);
+        alert(message)
+    }
+
+    if (!'registerProperty' in CSS) {
+        const message = 'CSS.registerProperty API is not available';
+        console.warn(message);
+        alert(message)
+    }
+</script>
