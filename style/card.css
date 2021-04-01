@@ -16,7 +16,7 @@
 .card:not([labs-primary]) {
     --kode-labs-bg-dots-radius: 1px;
     --kode-labs-bg-dots-distance: 10px;
-    background: paint(kode-labs-bg-dots), var(--border-color);
+    background: paint(kode-labs-bg-dots), rgba(255,255,255,.02);
     padding: 1.5em;
     border: 1px solid var(--border-color);
 }

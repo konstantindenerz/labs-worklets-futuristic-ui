@@ -20,3 +20,8 @@ body {
     margin: 0;
 }
 
+
+.card[labs-xl] {
+    position: sticky;
+    top: 40px;
+}

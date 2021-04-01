@@ -8,7 +8,7 @@ CSS.registerProperty({
 CSS.registerProperty({
     name: '--kode-labs-bg-lines-color',
     syntax: '<color>',
-    initialValue: 'rgba(0,0,0,.12)',
+    initialValue: 'rgba(0,0,0,.20)',
     inherits: false
 });
 
