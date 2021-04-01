@@ -7,7 +7,6 @@ class CirclesWorklet {
         const [widths, opacities, [space]] = CirclesWorklet.inputProperties.map(prop => props.getAll(prop))
         const numberOfLines = widths.length;
         const diameter = Math.min(size.height, size.width);
-console.log(space)
         for (let i = 0; i < numberOfLines; i++) {
             if(!widths[i] || !opacities[i]){
                 continue;
