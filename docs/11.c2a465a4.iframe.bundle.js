@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{918:function(module,exports,__webpack_require__){__webpack_require__(13);var _window$location=window.location,origin=_window$location.origin,path=_window$location.path;CSS.paintWorklet.addModule("".concat(origin).concat(path||"/","edge/edge.worklet.js"))}}]);

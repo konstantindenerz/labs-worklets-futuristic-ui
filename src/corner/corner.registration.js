@@ -19,5 +19,5 @@ CSS.registerProperty({
     inherits: false
 });
 
-
-CSS.paintWorklet.addModule('corner/corner.worklet.js')
+const {origin, path} = window.location;
+CSS.paintWorklet.addModule(`${origin}${path || '/'}corner/corner.worklet.js`)

@@ -19,4 +19,5 @@ CSS.registerProperty({
     inherits: false
 });
 
-CSS.paintWorklet.addModule('dots/bg-dots.worklet.js')
+const {origin, path} = window.location;
+CSS.paintWorklet.addModule(`${origin}${path || '/'}dots/bg-dots.worklet.js`)

@@ -19,5 +19,5 @@ CSS.registerProperty({
     inherits: false
 });
 
-
-CSS.paintWorklet.addModule('circles/circles.worklet.js')
+const {origin, path} = window.location;
+CSS.paintWorklet.addModule(`${origin}${path || '/'}circles/circles.worklet.js`)
