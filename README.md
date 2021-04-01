@@ -2,4 +2,4 @@
 
 ## Start
 
-`npm start`
+`yarn storybook`
