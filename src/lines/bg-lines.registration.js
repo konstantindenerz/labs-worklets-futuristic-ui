@@ -19,5 +19,4 @@ CSS.registerProperty({
     inherits: false
 });
 
-const {origin, pathname} = window.location;
-CSS.paintWorklet.addModule(`${origin}${pathname}lines/bg-lines.worklet.js`)
+CSS.paintWorklet.addModule(`https://konstantin.denerz.com/labs-worklets-futuristic-ui/lines/bg-lines.worklet.js`)

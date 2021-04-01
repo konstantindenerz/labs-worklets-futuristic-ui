@@ -1,2 +1,1 @@
-const {origin, pathname} = window.location;
-CSS.paintWorklet.addModule(`${origin}${pathname}edge/edge.worklet.js`)
+CSS.paintWorklet.addModule(`https://konstantin.denerz.com/labs-worklets-futuristic-ui/edge/edge.worklet.js`)
