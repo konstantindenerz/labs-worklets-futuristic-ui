@@ -1,7 +1,7 @@
 {
-  "name": "kodelabs-futuristic-ui-worklets",
+  "name": "kodelabs-paint-worklets-futuristic-ui",
   "version": "1.0.0",
-  "description": "A collection of worklets to create futuristic ui",
+  "description": "A collection of paint worklets to create futuristic UI",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
