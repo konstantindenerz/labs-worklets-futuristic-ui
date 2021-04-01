@@ -1,0 +1,23 @@
+card {
+    white-space: nowrap;
+    letter-spacing: 2px;
+    color: var(--bg-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    background: paint(kode-labs-bg-dots), rgba(255,255,255,.02);
+    --kode-labs-bg-dots-radius: 1;
+    --kode-labs-bg-dots-distance: 10;
+    padding: 1.5em;
+    border: 1px solid var(--border-color);
+    font-size: 1em;
+}
+
+card[labs-primary] {
+    background: paint(kode-labs-bg-lines), var(--primary-color);
+}
+
+card[labs-xl] {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2), 0 14px 40px rgba(0, 0, 0, .2);
+    padding: .3em;
+    font-size: 5em;
+}
