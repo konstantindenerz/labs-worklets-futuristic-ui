@@ -2,10 +2,9 @@
   "name": "kodelabs-paint-worklets-futuristic-ui",
   "version": "1.0.0",
   "description": "A collection of paint worklets to create futuristic UI",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx lite-server",
+    "start": "npm run storybook",
     "storybook": "start-storybook -p 6006 --no-manager-cache -s src",
     "build-storybook": "build-storybook"
   },
@@ -38,7 +37,6 @@
     "@storybook/addons": "^6.2.1",
     "@storybook/html": "^6.2.1",
     "@storybook/theming": "^6.2.1",
-    "babel-loader": "^8.2.2",
-    "lite-server": "^2.6.1"
+    "babel-loader": "^8.2.2"
   }
 }
