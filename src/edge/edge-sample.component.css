@@ -1,0 +1,17 @@
+edge-sample{
+    border-image-source: paint(kode-labs-edge);
+    border-image-slice: 1;
+    --kode-labs-circles-width: 1 1 2 4 1;
+    --kode-labs-circles-opacity: .1 .2 .5 .6 .3;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+    color: var(--primary-color);
+    border-right: 40px solid transparent;
+    background-clip: padding-box;
+}
+
+edge-sample[labs-invert-direction] {
+    border-left: 40px solid transparent;
+}
