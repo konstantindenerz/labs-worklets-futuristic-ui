@@ -1,0 +1,7 @@
+bg-dots {
+    background: paint(kode-labs-bg-dots);
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}

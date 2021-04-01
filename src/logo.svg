@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195.497" height="88.234" viewBox="0 0 195.497 88.234">
+  <g id="Component_1_3" data-name="Component 1 – 3" transform="translate(0.5 0.5)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="176" height="68" rx="2" transform="translate(8.706 8.749)" fill="#f23a48"/>
+    <text id="flux-capacitor" transform="translate(30.206 50.749)" fill="#1f1f1f" font-size="24" font-family="FontAwesome5Pro-Light, 'Font Awesome \35  Pro'" font-weight="300" opacity="0.998"><tspan x="0" y="0">flux-capacitor</tspan></text>
+    <text id="kode_labs" data-name="kode
+labs" transform="translate(73.206 35.749)" fill="#1f1f1f" font-size="24" font-family="Orbitron-Regular, Orbitron" letter-spacing="0.096em" opacity="0.998"><tspan x="0" y="0">kode</tspan><tspan font-family="Orbitron-ExtraBold, Orbitron" font-weight="800"><tspan x="0" y="30">labs</tspan></tspan></text>
+    <path id="Path_2" data-name="Path 2" d="M771.265,66.883H748.294V78.631" transform="translate(-748.294 -66.883)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_5" data-name="Path 5" d="M748.294,66.883h22.971V78.631" transform="translate(-576.767 -66.883)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_3" data-name="Path 3" d="M11.485,0H0V23.5" transform="translate(0 87.234) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_4" data-name="Path 4" d="M13.886,23.5H0V0" transform="translate(171 87.234) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

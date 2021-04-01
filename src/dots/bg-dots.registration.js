@@ -1,7 +1,7 @@
 CSS.registerProperty({
     name: '--kode-labs-bg-dots-radius',
-    syntax: '<length>',
-    initialValue: '2px',
+    syntax: '<number>',
+    initialValue: '2',
     inherits: false
 });
 
@@ -14,10 +14,9 @@ CSS.registerProperty({
 
 CSS.registerProperty({
     name: '--kode-labs-bg-dots-distance',
-    syntax: '<length>',
-    initialValue: '40px',
+    syntax: '<number>',
+    initialValue: '40',
     inherits: false
 });
 
-
-CSS.paintWorklet.addModule('src/bg-dots.worklet.js')
+CSS.paintWorklet.addModule('dots/bg-dots.worklet.js')

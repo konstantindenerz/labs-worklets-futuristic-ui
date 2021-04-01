@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx lite-server"
+    "start": "npx lite-server",
+    "storybook": "start-storybook -p 6006 --no-manager-cache -s src",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,14 @@
     "css-paint-polyfill": "^3.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@storybook/addon-actions": "^6.2.1",
+    "@storybook/addon-essentials": "^6.2.1",
+    "@storybook/addon-links": "^6.2.1",
+    "@storybook/addons": "^6.2.1",
+    "@storybook/html": "^6.2.1",
+    "@storybook/theming": "^6.2.1",
+    "babel-loader": "^8.2.2",
     "lite-server": "^2.6.1"
   }
 }
