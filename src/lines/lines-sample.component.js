@@ -1,7 +1,7 @@
 import './lines-sample.component.css';
-import './bg-lines.registration';
 
 export const linesSampleComponentFactory = ({label, gap, width, color}) => {
+    import('./bg-lines.registration');
     const component = document.createElement('bg-lines')
     const prefix = '--kode-labs-bg-lines-';
     component.innerText = label;

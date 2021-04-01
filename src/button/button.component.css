@@ -1,0 +1,35 @@
+button {
+    padding: .3em;
+    border-radius: 2px;
+    color: var(--bg-color);
+    font-size: 42px;
+    font-weight: bold;
+    border: 20px solid transparent;
+    background: paint(kode-labs-bg-lines), var(--bg-color);
+    border-image-source: paint(kode-labs-corner);
+    border-image-slice: 20;
+    transition: all .3s ease,
+    --kode-labs-corner-color .3s ease,
+    --kode-labs-corner-length .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+button[labs-primary] {
+    background: paint(kode-labs-bg-lines), var(--primary-color);
+    background-clip: padding-box;
+}
+
+@media (hover) {
+    button:hover {
+        --kode-labs-corner-length: 20px;
+        transform: scale(1.08);
+    }
+}
+
+button:active {
+    --kode-labs-corner-length: 60px;
+    --kode-labs-corner-color: var(--primary-color);
+    transform: scale(1);
+}

@@ -1,6 +1,5 @@
 import './dots-sample.component.css';
 
-import('./bg-dots.registration');
 
 export const dotsSampleComponentFactory = ({
                                         label,
@@ -8,6 +7,7 @@ export const dotsSampleComponentFactory = ({
                                         distance,
                                         color,
                                     }) => {
+    import('./bg-dots.registration');
     const div = document.createElement('bg-dots');
     div.innerText = label;
     div.style.setProperty('--kode-labs-bg-dots-radius', radius, 'important')

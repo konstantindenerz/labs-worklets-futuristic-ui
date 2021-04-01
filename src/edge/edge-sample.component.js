@@ -1,7 +1,7 @@
-import './edge.registration';
 import './edge-sample.component.css';
 
 export const edgeSampleComponentFactory = ({label, length, direction}) => {
+    import('./edge.registration');
     const prefix = '--kode-labs-edge-';
     const component = document.createElement('edge-sample');
     component.innerText = label;
