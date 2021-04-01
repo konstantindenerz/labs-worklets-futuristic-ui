@@ -1,2 +1,2 @@
-const {origin, path} = window.location;
-CSS.paintWorklet.addModule(`${origin}${path || '/'}edge/edge.worklet.js`)
+const {origin, pathname} = window.location;
+CSS.paintWorklet.addModule(`${origin}${pathname}edge/edge.worklet.js`)
