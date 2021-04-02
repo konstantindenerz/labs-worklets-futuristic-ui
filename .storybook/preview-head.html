@@ -28,3 +28,27 @@
         alert(message)
     }
 </script>
+<div class="support"></div>
+<style>
+    .support {
+        width: 250px;
+        height: 50px;
+        transition: all .3s ease;
+        transform: scale(.6);
+        transform-origin: right;
+        position: fixed;
+        opacity: .4;
+        background: url('chrome.svg') 0 0 no-repeat,
+        url('brave.svg') 60px 0 no-repeat,
+        url('opera.svg') 110px 0 no-repeat,
+        url('edge.svg') 165px 0 no-repeat;
+        right: 20px;
+        top: 20px;
+    }
+
+    @media (hover){
+        .support:hover{
+            opacity: 1;
+        }
+    }
+</style>
