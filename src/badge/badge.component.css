@@ -1,6 +1,7 @@
-badge{
+badge {
     --kode-labs-circles-width: 1 1 2 4;
     --kode-labs-circles-opacity: .1 .2 .5 .6;
+    --kode-labs-circles-space: 5px;
     --kode-labs-edge-direction: to right;
     --kode-labs-edge-width: 1;
 
@@ -14,10 +15,23 @@ badge{
     text-align: center;
     line-height: 1.5em;
     color: var(--primary-color);
-    border-right: 40px solid transparent;
+    border-right: 100px solid transparent;
     background-clip: padding-box;
+
+    animation: badge-pulse 3s ease-in-out infinite forwards;
 }
 
-badge[labs-invert-direction] {
-    border-left: 40px solid transparent;
+@keyframes badge-pulse {
+    from {
+        --kode-labs-circles-space: 5px;
+        padding: 1.5em;
+    }
+    50% {
+        padding: 1.56em;
+        --kode-labs-circles-space: 4px;
+    }
+    to {
+        --kode-labs-circles-space: 5px;
+        padding: 1.5em;
+    }
 }
