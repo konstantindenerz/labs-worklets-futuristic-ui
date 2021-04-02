@@ -1,0 +1,9 @@
+{
+  "port": 3005,
+  "files": ["./storybook-static/**/*.{html,htm,css,js}"],
+  "server": { "baseDir": "./storybook-static" },
+  "serveStatic": [{
+    "route": "/repo",
+    "dir": ["./docs"]
+  }]
+}

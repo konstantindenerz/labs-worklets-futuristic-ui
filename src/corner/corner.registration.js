@@ -19,4 +19,4 @@ CSS.registerProperty({
     inherits: false
 });
 
-CSS.paintWorklet.addModule(`https://konstantin.denerz.com/labs-worklets-futuristic-ui/corner/corner.worklet.js`)
+CSS.paintWorklet.addModule(`corner/corner.worklet.js`)

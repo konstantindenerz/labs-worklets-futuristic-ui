@@ -19,4 +19,4 @@ CSS.registerProperty({
     inherits: false
 });
 
-CSS.paintWorklet.addModule(`https://konstantin.denerz.com/labs-worklets-futuristic-ui/circles/circles.worklet.js`)
+CSS.paintWorklet.addModule(`circles/circles.worklet.js`)

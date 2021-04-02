@@ -19,4 +19,4 @@ CSS.registerProperty({
     inherits: false
 });
 
-CSS.paintWorklet.addModule(`https://konstantin.denerz.com/labs-worklets-futuristic-ui/lines/bg-lines.worklet.js`)
+CSS.paintWorklet.addModule(`lines/bg-lines.worklet.js`)

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{918:function(module,exports){CSS.paintWorklet.addModule("https://konstantin.denerz.com/labs-worklets-futuristic-ui/edge/edge.worklet.js")}}]);

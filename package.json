@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "yarn storybook",
-    "storybook": "start-storybook -p 6006 --no-manager-cache -s src",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006 --no-manager-cache -s dist",
+    "build-storybook": "build-storybook -s dist -o docs",
+    "uglifyjs": "uglifyjs-folder src -eo dist -p **/*.worklet.js -x .js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "@storybook/addons": "^6.2.1",
     "@storybook/html": "^6.2.1",
     "@storybook/theming": "^6.2.1",
-    "babel-loader": "^8.2.2"
+    "babel-loader": "^8.2.2",
+    "uglifyjs-folder": "^2.0.0"
   }
 }

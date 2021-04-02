@@ -19,4 +19,4 @@ CSS.registerProperty({
     inherits: false
 });
 
-CSS.paintWorklet.addModule(`https://konstantin.denerz.com/labs-worklets-futuristic-ui/dots/bg-dots.worklet.js`)
+CSS.paintWorklet.addModule(`dots/bg-dots.worklet.js`)
