@@ -4,10 +4,13 @@
   "description": "A collection of paint worklets to create futuristic UI",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn storybook",
+    "start": "concurrently \"npm run storybook\" \"npm-watch\"",
     "storybook": "start-storybook -p 6006 --no-manager-cache -s dist",
     "build-storybook": "build-storybook -s dist -o docs",
     "uglifyjs": "uglifyjs-folder src -eo dist -p **/*.worklet.js -x .js"
+  },
+  "watch": {
+    "uglifyjs": "src/**/*.worklet.js"
   },
   "repository": {
     "type": "git",
@@ -39,6 +42,8 @@
     "@storybook/html": "^6.2.1",
     "@storybook/theming": "^6.2.1",
     "babel-loader": "^8.2.2",
+    "concurrently": "^6.0.0",
+    "npm-watch": "^0.9.0",
     "uglifyjs-folder": "^2.0.0"
   }
 }

@@ -1,7 +1,7 @@
 import {dotsSampleComponentFactory} from "./dots-sample.component";
 
 export default {
-    title: 'Background / Dots',
+    title: 'Paint Worklet / Background / Dots',
     parameters: {
         layout: 'fullscreen'
     },

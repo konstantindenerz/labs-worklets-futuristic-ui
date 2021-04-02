@@ -1,7 +1,7 @@
 import {cornerSampleComponentFactory} from './corner-sample.component';
 
 export default {
-    title: 'Border / Corner',
+    title: 'Paint Worklet / Border / Corner',
     parameters: {
         layout: 'centered',
     },

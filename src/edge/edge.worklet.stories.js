@@ -1,7 +1,7 @@
 import {edgeSampleComponentFactory} from "./edge-sample.component";
 
 export default {
-    title: 'Border / Edge',
+    title: 'Paint Worklet / Border / Edge',
     parameters: {
         layout: 'centered',
     },

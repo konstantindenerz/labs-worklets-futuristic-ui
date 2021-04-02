@@ -1,7 +1,7 @@
 import {linesSampleComponentFactory} from "./lines-sample.component";
 
 export default {
-    title: 'Background / Lines',
+    title: 'Paint Worklet / Background / Lines',
     parameters:{
         layout: 'fullscreen'
     },

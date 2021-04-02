@@ -1,7 +1,7 @@
 import {circlesSampleComponentFactory} from "./circles-sample.component";
 
 export default {
-    title: 'Border / Circles',
+    title: 'Paint Worklet / Border / Circles',
     parameters: {
         layout: 'centered',
     },
