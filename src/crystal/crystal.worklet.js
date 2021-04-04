@@ -1,47 +1,55 @@
 registerPaint('crystal', class CrystalWorklet {
     static get inputProperties() {
-        return ['--kode-labs-crystal-spire-size', '--kode-labs-crystal-color', '--kode-labs-crystal-progress']
+        return ['--kode-labs-crystal-color', '--kode-labs-crystal-progress']
     }
 
     paint(ctx, size, props) {
-        const [spireSize, color, progress] = CrystalWorklet.inputProperties.map(prop => props.get(prop));
-        const length = spireSize.value;
-        const space = 8;
+        const [color, progress] = CrystalWorklet.inputProperties.map(prop => props.get(prop));
 
-        ctx.beginPath();
-        ctx.moveTo(0, size.height / 2);
-        ctx.lineTo(length, 0);
-        ctx.lineTo(size.width - length, 0);
-        ctx.lineTo(size.width, size.height / 2);
-        ctx.lineTo(size.width - length, size.height);
-        ctx.lineTo(length, size.height);
-        ctx.lineTo(0, size.height / 2);
-        ctx.strokeStyle = color;
-        ctx.stroke();
-        ctx.clip();
+        const outerCrystal = {width: size.width, height: size.height, x: 0, y: 0, spireLength: size.height / 2};
+        this.drawCrystal(ctx, outerCrystal, color);
 
-
+        const nestedSpace = 8;
+        const innerCrystal = {
+            width: outerCrystal.width - nestedSpace * 2,
+            height: outerCrystal.height - nestedSpace * 2,
+            x: outerCrystal.x + nestedSpace,
+            y: outerCrystal.y + nestedSpace,
+            spireLength: outerCrystal.spireLength - nestedSpace
+        };
+        this.drawCrystal(ctx, innerCrystal, color, true);
 
         if (progress.value) {
+            const fillCrystal = Object.assign({}, innerCrystal, {width: innerCrystal.width * progress.value / 100});
+            this.drawCrystal(ctx, fillCrystal, color, true, true);
+        }
+    }
 
-            size = {
-                width: (size.width - space) * progress.value / 100,
-                height: size.height - space
-            };
+    drawCrystal(ctx, {width, height, x, y, spireLength}, color, clip, fill) {
+        ctx.beginPath();
+        const x1 = x + spireLength;
+        const x3 = x + width;
+        const x2 = x3 - spireLength;
 
-            ctx.beginPath();
-            ctx.moveTo(space, size.height / 2 + space / 2);
-            ctx.lineTo(length, space);
-            ctx.lineTo(size.width - length + space / 2, space);
-            ctx.lineTo(size.width - 2, size.height / 2 + space / 2);
-            ctx.lineTo(size.width - length + space / 2, size.height);
-            ctx.lineTo(length, size.height);
-            ctx.lineTo(space, size.height / 2 + space / 2);
+        const y1 = y + height / 2;
+        const y2 = y + height;
+
+        ctx.moveTo(x, y1);
+        ctx.lineTo(x1, y);
+        ctx.lineTo(x2, y);
+        ctx.lineTo(x3, y1);
+        ctx.lineTo(x2, y2);
+        ctx.lineTo(x1, y2);
+        if (clip) {
+            ctx.clip();
+        }
+        ctx.closePath();
+        if (fill) {
             ctx.fillStyle = color;
-            ctx.stroke();
-
             ctx.fill();
-
+        } else {
+            ctx.strokeStyle = color;
+            ctx.stroke();
         }
     }
 })

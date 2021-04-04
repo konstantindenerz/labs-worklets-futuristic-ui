@@ -1,5 +1,4 @@
 crystal {
-    display: block;
     width: 350px;
     height: 60px;
     background: red;
@@ -8,6 +7,12 @@ crystal {
     color: var(--color-bg);
     place-items: center;
     text-shadow: 1px -1px 0 rgba(255,255,255,.6), 1px 1px 0 rgba(255,255,255,.6), -1px -1px 0 rgba(255,255,255,.6),  -1px 1px 0 rgba(255,255,255,.6);
+    animation: progress-42 1s ease-in-out forwards; /* initial demo animation*/
 }
 
-crystal span {}
+@keyframes progress-42 {
+    from {
+        --kode-labs-crystal-progress: 0;
+    }
+}
+

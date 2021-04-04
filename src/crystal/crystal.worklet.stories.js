@@ -31,8 +31,7 @@ const Template = ({color, spireSize, progress}) => {
 
 export const Default = Template.bind({});
 Default.args = {
-    color: 'rgba(255,255,255,0.6)',
-    spireSize: 30,
+    color: 'rgba(255,255,255,0.8)',
     progress: 42
 }
 
