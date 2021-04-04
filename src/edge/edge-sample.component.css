@@ -1,15 +1,18 @@
 edge-sample{
     border-image-source: paint(kode-labs-edge);
-    border-image-slice: 1;
+    border-image-slice: 20 33%;
+    /*border-image-width: 0 40px 0 0;*/
     width: 1.5em;
     height: 1.5em;
     text-align: center;
     line-height: 1.5em;
     color: var(--primary-color);
     border-right: 40px solid transparent;
+    border-left: none;
     background-clip: padding-box;
 }
 
 edge-sample[labs-invert-direction] {
+    border-right: none;
     border-left: 40px solid transparent;
 }

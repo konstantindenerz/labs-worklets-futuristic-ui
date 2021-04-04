@@ -4,14 +4,16 @@ badge {
     --kode-labs-circles-space: 5px;
     --kode-labs-edge-direction: to right;
     --kode-labs-edge-width: 1;
+    --kode-labs-edge-marker: circle;
 
-    display: block;
+    display: grid;
+    place-items: center;
     background: paint(kode-labs-circles);
     padding: 1.5em;
     border-image-source: paint(kode-labs-edge);
-    border-image-slice: 1;
-    width: 1.5em;
-    height: 1.5em;
+    border-image-slice: 0 100;
+    width: 2.5em;
+    height: 2.5em;
     text-align: center;
     line-height: 1.5em;
     color: var(--primary-color);
@@ -24,14 +26,11 @@ badge {
 @keyframes badge-pulse {
     from {
         --kode-labs-circles-space: 5px;
-        padding: 1.5em;
     }
     50% {
-        padding: 1.56em;
-        --kode-labs-circles-space: 4px;
+        --kode-labs-circles-space: 2px;
     }
     to {
         --kode-labs-circles-space: 5px;
-        padding: 1.5em;
     }
 }

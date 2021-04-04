@@ -10,9 +10,13 @@ export default {
             control: 'radio',
             options: ['to right', 'to left']
         },
-        length: {
-            control: 'range', min: 0, max: 100
-        }
+        marker: {
+            control: 'radio',
+            options: ['circle', 'square', 'no marker']
+        },
+        lengthAndSliceX: {
+            control: 'range', min: 0, max: 400, step: 350
+        },
     }
 }
 
@@ -23,8 +27,9 @@ const Template = (args) => {
 export const Default = Template.bind({});
 
 Default.args = {
+    marker: 'circle',
     label: 'Edge',
     direction: 'to right',
-    length: 40,
+    lengthAndSliceX: 40,
 }
 
