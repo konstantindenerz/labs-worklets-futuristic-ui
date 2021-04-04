@@ -9,7 +9,7 @@ registerPaint('crystal', class CrystalWorklet {
         const outerCrystal = {width: size.width, height: size.height, x: 0, y: 0, spireLength: size.height / 2};
         this.drawCrystal(ctx, outerCrystal, color);
 
-        const nestedSpace = 8;
+        const nestedSpace = 4;
         const innerCrystal = {
             width: outerCrystal.width - nestedSpace * 2,
             height: outerCrystal.height - nestedSpace * 2,
@@ -17,7 +17,7 @@ registerPaint('crystal', class CrystalWorklet {
             y: outerCrystal.y + nestedSpace,
             spireLength: outerCrystal.spireLength - nestedSpace
         };
-        this.drawCrystal(ctx, innerCrystal, color, true);
+        this.drawCrystal(ctx, innerCrystal, 'transparent', true);
 
         if (progress.value) {
             const fillCrystal = Object.assign({}, innerCrystal, {width: innerCrystal.width * progress.value / 100});

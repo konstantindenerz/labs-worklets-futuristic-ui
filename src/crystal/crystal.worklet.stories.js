@@ -21,6 +21,7 @@ const Template = ({color, progress}) => {
     const prefix = '--kode-labs-crystal-';
     component.innerHTML= `<span>${progress}%</span>`;
     component.style.setProperty(`${prefix}color`, color);
+    component.style.setProperty(`--color`, color);
     component.style.setProperty(`${prefix}progress`, `${progress}`);
     return component;
 };
@@ -31,3 +32,16 @@ Default.args = {
     progress: 42
 }
 
+
+export const Completed = Template.bind({});
+Completed.args = {
+    color: 'rgb(128,183,114)',
+    progress: 55
+}
+
+
+export const Start = Template.bind({});
+Start.args = {
+    color: 'rgb(100,100,100)',
+    progress: 0
+}
