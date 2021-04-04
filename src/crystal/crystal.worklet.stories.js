@@ -36,7 +36,7 @@ Default.args = {
 export const Completed = Template.bind({});
 Completed.args = {
     color: 'rgb(128,183,114)',
-    progress: 55
+    progress: 100
 }
 
 
