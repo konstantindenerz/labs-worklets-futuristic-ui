@@ -6,9 +6,6 @@ export default {
         layout: 'centered'
     },
     argTypes: {
-        spireSize: {
-            control: 'range'
-        },
         progress: {
             control: 'range'
         },
@@ -18,13 +15,12 @@ export default {
     }
 }
 
-const Template = ({color, spireSize, progress}) => {
+const Template = ({color, progress}) => {
     import('./crystal.registration');
     const component = document.createElement('crystal');
     const prefix = '--kode-labs-crystal-';
     component.innerHTML= `<span>${progress}%</span>`;
     component.style.setProperty(`${prefix}color`, color);
-    component.style.setProperty(`${prefix}spire-size`, `${spireSize}px`);
     component.style.setProperty(`${prefix}progress`, `${progress}`);
     return component;
 };
