@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{923:function(module,exports){CSS.registerProperty({name:"--kode-labs-edge-marker-size",syntax:"<length>",initialValue:"12px",inherits:!1}),CSS.paintWorklet.addModule("edge/edge.worklet.js")}}]);
