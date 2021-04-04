@@ -46,9 +46,33 @@
         top: 20px;
     }
 
-    @media (hover){
-        .support:hover{
+    @media (hover) {
+        .support:hover {
             opacity: 1;
         }
     }
+</style>
+
+<script>
+    const a = document.createElement('a');
+    a.classList.add('kode-labs-profile');
+    a.innerHTML = 'build with <span>❤</span> by @kdenerz';
+    a.href = 'https://twitter.com/kdenerz'
+    document.body.appendChild(a);
+</script>
+
+<style>
+    .kode-labs-profile {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .kode-labs-profile span {
+        color: var(--primary-color)
+    }
+
 </style>
