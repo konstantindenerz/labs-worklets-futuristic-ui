@@ -1,12 +1,12 @@
 class EdgeWorklet {
     static get inputProperties() {
-        return ['--kode-labs-edge-direction', '--kode-labs-edge-width', '--kode-labs-edge-marker']
+        return ['--kode-labs-edge-direction', '--kode-labs-edge-width', '--kode-labs-edge-marker', '--kode-labs-edge-marker-size']
     }
 
     paint(ctx, size, props) {
-        const [directionProp, width, marker] = EdgeWorklet.inputProperties.map(prop => props.get(prop));
+        const [directionProp, width, marker, markerSizeProp] = EdgeWorklet.inputProperties.map(prop => props.get(prop));
         const color = 'rgba(255,255,255,.20)';
-        const defaultMarkerSize = 10;
+        const defaultMarkerSize = markerSizeProp.value;
         const markerType = marker.toString().trim().toLowerCase();
         ctx.strokeStyle = color;
         ctx.strokeWidth = width.value;
@@ -37,11 +37,11 @@ class EdgeWorklet {
         if (hasMarker) {
             markerTypes.get(markerType)();
         }
-        const markerSize = hasMarker ? 10 : 0;
+        const markerSize = hasMarker ? defaultMarkerSize : 0;
         ctx.beginPath();
         if (direction === 'to right') {
             ctx.moveTo(0, size.height / 2);
-            ctx.lineTo(size.width - 10, size.height / 2);
+            ctx.lineTo(size.width - markerSize, size.height / 2);
         } else if (direction === 'to left') {
             ctx.moveTo(markerSize, size.height / 2);
             ctx.lineTo(size.width, size.height / 2);

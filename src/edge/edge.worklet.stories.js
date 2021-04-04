@@ -15,7 +15,10 @@ export default {
             options: ['circle', 'square', 'no marker']
         },
         lengthAndSliceX: {
-            control: 'range', min: 0, max: 400, step: 350
+            control: 'range',
+        },
+        markerSize: {
+            control: 'range'
         },
     }
 }
@@ -28,6 +31,7 @@ export const Default = Template.bind({});
 
 Default.args = {
     marker: 'circle',
+    markerSize: 12,
     label: 'Edge',
     direction: 'to right',
     lengthAndSliceX: 40,
