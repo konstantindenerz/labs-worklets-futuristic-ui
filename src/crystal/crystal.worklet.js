@@ -9,11 +9,11 @@ registerPaint('crystal', class CrystalWorklet {
         const outerCrystal = {width: size.width, height: size.height, x: 0, y: 0, spireLength: size.height / 2};
         this.drawCrystal(ctx, outerCrystal, color);
 
-        const nestedSpace = 4;
+        const nestedSpace = 8;
         const innerCrystal = {
-            width: outerCrystal.width - nestedSpace * 2,
+            width: outerCrystal.width - nestedSpace * 2 - nestedSpace,
             height: outerCrystal.height - nestedSpace * 2,
-            x: outerCrystal.x + nestedSpace,
+            x: outerCrystal.x + nestedSpace + nestedSpace / 2,
             y: outerCrystal.y + nestedSpace,
             spireLength: outerCrystal.spireLength - nestedSpace
         };
