@@ -2,7 +2,14 @@
 
 ## Start
 
-`yarn storybook`
+
+### Install deps:
+
+`npm i`
+
+### Start Storybook with Experiments
+
+`npm start`
 
 ## The deployed storybook:
 
