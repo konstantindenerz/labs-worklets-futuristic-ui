@@ -1,12 +1,13 @@
 crystal {
+    --color: rgba(255,255,255,.6);
+    
     width: 350px;
     height: 60px;
-    background: red;
+    background: var(--color);
     background: paint(crystal);
     display: grid;
     color: var(--color-bg);
     place-items: center;
-    --color: rgba(255,255,255,.6);
     text-shadow: 1px -1px 0 var(--color), 1px 1px 0 var(--color), -1px -1px 0 var(--color),  -1px 1px 0 var(--color);
     animation: progress-42 1s ease-in-out forwards; /* initial demo animation*/
 }
